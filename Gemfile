@@ -9,6 +9,9 @@ source 'https://rubygems.org'
     gem 'jbuilder',     '2.2.3'
     gem 'sdoc',         '0.4.0', group: :doc
 
+    gem 'bootstrap-sass',       '3.2.0.0'
+
+
     group :development, :test do
       gem 'sqlite3',     '1.3.9'
       gem 'byebug',      '3.4.0'
