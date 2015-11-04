@@ -18,5 +18,12 @@ class UsersController < ApplicationController
         else
           render 'new'
         end
+        if @user.save
+      remember @user       #  NEW LINE
+      flash[:success] = "Welcome to the Sample App!"    # NEW LINE
+      redirect_to @user  
+    else
+      render 'new'
+    end
       end
 end
